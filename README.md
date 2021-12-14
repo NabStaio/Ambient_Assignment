@@ -16,7 +16,7 @@ This project can solve this problems:
 In Fig. 1 it is illustrated a possible structure of the shop (the one described in the ontology).
 
 <img src="OutletStructure.jpeg" width="500" height="500" />
-*Fig.1 Plant of the shop*
+_Fig.1 Plant of the shop_
 
 
 
@@ -33,10 +33,10 @@ Fig.2 and Fig.3 are a zoom of how shelves and books are designed.
 
 
 <img src="ShelfwithCaseandSwitch.jpeg" width="500" height="500" />
-*Fig.2 A Shelf with case and a switch sensor*
+_Fig.2 A Shelf with case and a switch sensor_
 
 <img src="BookwithRFID.jpeg" width="500" height="500" />
-*Fg.3 A Book with the barcode (RFID Antenna)*
+_Fg.3 A Book with the barcode (RFID Antenna)_
 
 
 
