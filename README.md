@@ -15,7 +15,9 @@ This project can solve this problems:
 
 In Fig. 1 it is illustrated a possible structure of the shop (the one described in the ontology).
 
+
 ![OutletStructure](/OutletStructure.jpeg)
+
 
 The client will start from the Entrance room, passing through a PIR sensor and catched by the stereo camera
 
