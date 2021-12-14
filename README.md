@@ -33,7 +33,7 @@ Fig.2 and Fig.3 are a zoom of how shelves and books are designed.
 
 <img src="ShelfwithCaseandSwitch.jpeg" width="500" height="500" />      _Fig.2 A Shelf with case and a switch sensor_
 
-<img src="BookwithRFID.jpeg" width="500" height="500" />      _Fg.3 A Book with the barcode (RFID Antenna)_
+<img src="BookwithRFID.jpeg" width="500" height="500" />                                                    _Fg.3 A Book with the barcode (RFID Antenna)_
 
 
 
