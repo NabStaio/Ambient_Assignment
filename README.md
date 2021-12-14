@@ -15,7 +15,8 @@ This project can solve this problems:
 
 In Fig. 1 it is illustrated a possible structure of the shop (the one described in the ontology).
 
-<img src="OutletStructure.jpeg" width="200" height="200" /> *Fig.1 Plant of the shop*
+<img src="OutletStructure.jpeg" width="500" height="500" />
+*Fig.1 Plant of the shop*
 
 
 
@@ -31,9 +32,11 @@ Hovewer, to take a book a built-in case needs to be open, and it's done by switc
 Fig.2 and Fig.3 are a zoom of how shelves and books are designed.
 
 
-![ShelfwithCaseandSwitch](/ShelfwithCaseandSwitch.jpeg) *Fig.2 A Shelf with case and a switch sensor*
+<img src="ShelfwithCaseandSwitch.jpeg" width="500" height="500" /> 
+*Fig.2 A Shelf with case and a switch sensor*
 
-![BookwithRFID](/BookwithRFID.jpeg) *FIg.3 A Book with the barcode (RFID Antenna)*
+<img src="BookwithRFID.jpeg" width="500" height="500" />
+*FIg.3 A Book with the barcode (RFID Antenna)*
 
 
 
