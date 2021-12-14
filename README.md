@@ -32,7 +32,8 @@ Hovewer, to take a book a built-in case needs to be open, and it's done by switc
 Fig.2 and Fig.3 are a zoom of how shelves and books are designed.
 
 
-![ShelfwithCaseandSwitch](/ShelfwithCaseandSwitch.jpeg)   *Fig.2 A Shelf with case and a switch sensor*
+![ShelfwithCaseandSwitch](/ShelfwithCaseandSwitch.jpeg)
+*Fig.2 A Shelf with case and a switch sensor*
 
 ![BookwithRFID](/BookwithRFID.jpeg) *FIg.3 A Book with the barcode (RFID Antenna)*
 
