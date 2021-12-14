@@ -20,4 +20,24 @@ In Fig. 1 it is illustrated a possible structure of the shop (the one described 
 
 
 
+As it's shown, all the rooms are connected at the entrance and are initially close.
+Books are divided in specific shelves associated with a specific color that indicates their category.
+Rooms have names related to the categories, e.g. NinthArt room has origin from the classification of arts, comics are the ninth art in the world.
+Thus, the client will start his journey in the shop entering in the entrance passing through a PIR sensor and catched by a stereo camera.
+In this case the outlet owner can see if a person is entered or not, and the camera can process the data of the customer checked, send them to a
+computer, compute the algorithm and suggest the preferred room to visit on the display near the door. Once near it, the person selects the place
+and will open the door by switching the button on the side; in this way also the selected room's door is opened, drawing a path to the desired chamber.
+In the room the customer can browse every book and buy how many he wants just by reading the barcode with his phone.
+Hovewer, to take a book a built-in case needs to be open, and it's done by switching the interrupt on the side.
+Fig.2 and Fig.3 are a zoom of how shelves and books are designed.
+
+
+![ShelfwithCaseandSwitch](/ShelfwithCaseandSwitch.jpeg) Fig.2 A Shelf with case and a switch sensor
+
+![BookwithRFID](/BookwithRFID) FIg.3 A Book with the barcode (RFID Antenna)
+
+
+
+
+
 
