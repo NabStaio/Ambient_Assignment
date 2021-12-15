@@ -48,10 +48,12 @@ It is created according to the thumb rules of the assignment:
 
 #### CLASSES
 
-7 Top classes are created, with their respective sub-classes:
-1. **ACTIVITY** this class represents the activities that a person can done in the shop
-  1. subactivity
-
+*7 Top classes* are created, with their respective sub-classes:
+- **ACTIVITY** this class represents the activities that a person can done in the shop, defined as overlapping some sensor (Activity = ∃overlap.Sensor)
+  - **BUYBOOKACTIVITY** is a sub class of activity and it is the activity done when a customer buy a book, so when his phone is reading the barcode (BuyBookActivity =Activity ⋂ ∃(overlap.RFIDAntennaSensor ⋂ overlap.Phone)
+  - **ENTEREDACTIVITY** is a sub class of activity and it is the activity representable as overlapping the PIR sensor or the stereo camera sensor (EnteredActivity = Activity ⋂ ∀(overlap.CameraSensor ⋂ overlap.PIRSensor)
+  -  **OPENCASEACTIVITY** is a sub class of activity done when switching the interrupt (OpenCaseActivity = Activity ⋂ ∀overlap.SwitchSensor)
+- **BOOK**
 
 
 
