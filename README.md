@@ -49,11 +49,37 @@ It is created according to the thumb rules of the assignment:
 #### CLASSES
 
 *7 Top classes* are created, with their respective sub-classes:
-- **ACTIVITY** this class represents the activities that a person can done in the shop, defined as overlapping some sensor (Activity = ∃overlap.Sensor)
-  - **BUYBOOKACTIVITY** is a sub class of activity and it is the activity done when a customer buy a book, so when his phone is reading the barcode (BuyBookActivity =Activity ⋂ ∃(overlap.RFIDAntennaSensor ⋂ overlap.Phone)
-  - **ENTEREDACTIVITY** is a sub class of activity and it is the activity representable as overlapping the PIR sensor or the stereo camera sensor (EnteredActivity = Activity ⋂ ∀(overlap.CameraSensor ⋂ overlap.PIRSensor)
-  -  **OPENCASEACTIVITY** is a sub class of activity done when switching the interrupt (OpenCaseActivity = Activity ⋂ ∀overlap.SwitchSensor)
-- **BOOK**
+- **Activity** This class represents the activities that a person can do in the shop, defined as overlapping some sensor (Activity = ∃overlap.Sensor)
+  - **BuyBookActivity** is a sub class of activity and it is the activity done when a customer buy a book, so when his phone is reading the barcode (BuyBookActivity = Activity ⋂ ∃(overlap.RFIDAntennaSensor ⋂ overlap.Phone)
+  - **EnteredActivity** is a sub class of activity and it is the activity representable as overlapping the PIR sensor or the stereo camera sensor (EnteredActivity = Activity ⋂ ∀(overlap.CameraSensor ⋂ overlap.PIRSensor)
+  -  **OpenCaseActivity** is a sub class of activity done when switching the interrupt (OpenCaseActivity = Activity ⋂ ∀overlap.SwitchSensor)
+
+- **Book** This class represents the books on sales, they are defined as something on a shelf with a barcode associated and a number of pages (Book = ∃isBookof.Shelf ⋂ ∃hasPage.int ⋂ ∀hasSensor.RFIDAntennaSensor)
+  - **ActionBook** Books of action type placed on the RedShelf class (ActionBook = Book ⋂ ∀isBookof.RedShelf ...)
+  - **AdventureBook** Books of adventure type placed on the BlueShelf class (AdventureBook = Book ⋂ ∀isBookof.BlueShelf ...)
+  - **ComicBook** Comics placed on the OrangeShelf class (ComicBook = Book ⋂ ∀isBookof.OrangeShelf ...)
+  - **FantasyBook** Books of fantasy type placed on the GreenShelf class (FantasyBook= Book ⋂ ∀isBookof.GreenShelf ...)
+  - **LoveStoryBook** Books of romantic type placed on the PinkShelf class (LoveStoryBook= Book ⋂ ∀isBookof.PinkShelf ...)
+  - **MangaBook** Manga comics placed on the WhiteShelf class (MangaBook= Book ⋂ ∀isBookof.WhiteShelf ...)
+  - **NoirBook** Books of noir type placed on the BlackShelf class (NoirBook= Book ⋂ ∀isBookof.BlackShelf ...)
+  - **PhilosophicBook** Books of philosophic type placed on the YellowShelf class (FantasyBook= Book ⋂ ∀isBookof.YellowShelf ...)
+  
+- **Case** This class represents the case that covers the shelves, but also the doors, interpreted as a case that covers a wall. Moreover has a switch sensor to open it (Case =  ∀hasSensor.SwitchSensor ⋂ ∃isCaseof.Shelf ⋃ ∃isCaseof.Room)
+
+- **Person** This class represents the customers of the shop, that have done some activities and have a phone to read a barcode; the phone here is a sub-class of a camera sensor. In addition it counts how many books they buy. (Person = ∃hasDone.Activity ⋂ ∃hasPhone.Phone ⋂ ∃hasBoughtBook.integer)
+
+- **Room** This class represents all the rooms in the shop, a room is connected to another room, has a specific number of shelves and a case. (Room = (∃hasShelf.Shelf ⋃ ∃hasCase.Case) ⋂ ∃isConnected.Room ⋂ ∃hasShelfNumber.int
+  - **DieHardRoom** Room that contains red shelves and blue ones, in a range of 2-5; the name stands for the type of books on the shelves: the action and adventure ones.It is connected to the Entrance room.
+  - **DreamRoom** Room that contains green shelves, in this case has value 1; here fantasy books are listed so the name means place where you can dream. It is connected to the Entrance room.
+  - **EntranceRoom** Principal room that has no shelves and contains the PIR, stereo camera and switch sensors. It is connected to all rooms and has a case (the door) to open if you want to buy a book.
+  - **MysteryLoveRoom** Room that contains pink shelves and black ones, in a range of 6-7; the name stands for the type of books on the shelves: the romantic and noir ones.It is connected to the Entrance room.
+  - **NinthArtRoom** Room that contains white shelves and orange ones, in a range of 8-9; the name cames from a classification that people give to arts: comics are the ninth one. It is connected to the Entrance room.
+  - **ScienceQueenRoom** Room that contains yellow shelves, in this case has value 1; the name cames from the definition of philosophy: the queen of all sciences. It is connected to the Entrance room.
+  
+- **Sensor** This class represents the sensors involved in the outlet, is a primitive class without specific definition, only sub-classes are defined
+  - **CameraSensor** Camera sensor class that includes the stereo camera in the Entrance and phone here considered as a sensor (CameraSensor = Sensor ⋂ ∀isSensorof.Room)
+    - bb  
+  
 
 
 
