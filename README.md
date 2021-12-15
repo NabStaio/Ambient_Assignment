@@ -163,12 +163,20 @@ In the Fig.4 it is illustrated a screen of some indivduals of the ontology.
 
 <img src="IndividualsAssertion.PNG" width="500" height="500" /> _Fig.4 Individuals assertions_
 
-In the AI-Read_Outlet_Ontology.Owl file you can see all the individuals.
+In the **AI-Read_Outlet_Ontology.Owl** file you can see all the individuals.
 
 #### PROPERTY ASSERTION
 
 *329 Property Assertion* have been created
 In the Fig.5 and Fig.6 it is illustrated a screen of some property assertions of the ontology.
+
+<img src="propertyassertionemeraldshelf.PNG" width="500" height="500" /> _Fig.5 Property assertions of the individual EmeraldShelf_
+
+<img src="propertyassertionbarcodeman3.PNG" width="500" height="500" /> _Fig.6 Property assertions of the individual BarCodeMan3_
+
+In the **AI-Read_Outlet_Ontology.Owl** file you can see all the individuals.
+
+
 
 
 
