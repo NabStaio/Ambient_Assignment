@@ -160,6 +160,7 @@ Assertions are created according to a possible realistic scenario where 2 person
 
 In the Fig.4 it is illustrated a screen of some indivduals of the ontology.
 
+<img src="IndividualsAssertion.PNG" width="500" height="500" /> _Fig.4 Individuals assertions_
 
  
 
