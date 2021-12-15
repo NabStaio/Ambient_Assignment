@@ -85,8 +85,7 @@ It is created according to the thumb rules of the assignment:
   - **SwitchSensor** Switch sensor near cases (SwitchSensor = Sensor ⋂ ∀isSensorof.Case)
 
 - **Shelf** This class represents the shelves that contains books and are in rooms. At every category of book is associated a colored shelf and this is how we can classify them. Every shelf has a case and also counts the number of books in. (Shelf = ∃hasBook.Book ⋂ ∃hasCase.Case ⋂ ∃inRoom.Room ⋂ ∃hasBookNumber.(>=1) ⋂ ∃hasColor.string)
-  -   
-  
+ 
 
 
 
