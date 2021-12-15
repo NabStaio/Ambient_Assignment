@@ -85,6 +85,20 @@ It is created according to the thumb rules of the assignment:
   - **SwitchSensor** Switch sensor near cases (SwitchSensor = Sensor ⋂ ∀isSensorof.Case)
 
 - **Shelf** This class represents the shelves that contains books and are in rooms. At every category of book is associated a colored shelf and this is how we can classify them. Every shelf has a case and also counts the number of books in. (Shelf = ∃hasBook.Book ⋂ ∃hasCase.Case ⋂ ∃inRoom.Room ⋂ ∃hasBookNumber.(>=1) ⋂ ∃hasColor.string)
+  - **BlackShelf** contains noir books and has black colors, it is placed in the MysteryLove room (BlackShelf = Shelf ⋂ ∃hasColor."Black" ⋂ ∃hasBook.NoirBook ⋂ ∀inRoom.MysteryLoveRoom ...)
+  - **BlueShelf** contains adventure books and has blue colors, it is placed in the DieHard room (BlueShelf = Shelf ⋂ ∃hasColor."Blue" ⋂ ∃hasBook.AdventureBook ⋂ ∀inRoom.DieHardRoom ...)
+  - **GreenShelf** contains fantasy books and has green colors, it is placed in the Dream room (GreenShelf = Shelf ⋂ ∃hasColor."G" ⋂ ∃hasBook.FantasyBook ⋂ ∀inRoom.DreamRoom ...)
+  - **OrangeShelf** contains comic books and has orange colors, it is placed in the NinthArt room (OrangeShelf = Shelf ⋂ ∃hasColor."O" ⋂ ∃hasBook.ComicBook ⋂ ∀inRoom.NinthArtRoom ...) 
+  - **PinkShelf** contains lovestory books and has pink colors, it is placed in the MysteryLove room (PinkShelf = Shelf ⋂ ∃hasColor."P" ⋂ ∃hasBook.LoveStoryBook ⋂ ∀inRoom.MysteryLoveRoom ...)
+  - **RedShelf** contains action books and has red colors, it is placed in the DieHard room (RedShelf = Shelf ⋂ ∃hasColor."R" ⋂ ∃hasBook.NoirBook ⋂ ∀inRoom.DieHardRoom ...)
+  - **WhiteShelf** contains manga booka and has white colors, it is placed in the NinthArt room (WhiteShelf = Shelf ⋂ ∃hasColor."W" ⋂ ∃hasBook.MangaBook ⋂ ∀inRoom.NinthArtRoom ...)
+  - **YellowShelf** contains philosophic books and has yellow colors, it is placed in the ScienceQueen room (YellowShelf = Shelf ⋂ ∃hasColor."Y" ⋂ ∃hasBook.PhilosophicBook ⋂ ∀inRoom.ScienceQueenRoom)
+
+All classes are disjoint except for the sub-classes of room, because some shelves share the same room or some sensor are in the same room and this will cause inconsistency.
+
+### OBJECT PROPERTIES
+
+
  
 
 
