@@ -48,7 +48,8 @@ It is created according to the thumb rules of the assignment:
 
 #### CLASSES
 
-*7 Top classes* are created, with their respective sub-classes:
+*7 Top Classes* have been created, with their respective sub-classes:
+
 - **Activity** This class represents the activities that a person can do in the shop, defined as overlapping some sensor (Activity = ∃overlap.Sensor)
   - **BuyBookActivity** is a sub class of activity and it is the activity done when a customer buy a book, so when his phone is reading the barcode (BuyBookActivity = Activity ⋂ ∃(overlap.RFIDAntennaSensor ⋂ overlap.Phone)
   - **EnteredActivity** is a sub class of activity and it is the activity representable as overlapping the PIR sensor or the stereo camera sensor (EnteredActivity = Activity ⋂ ∀(overlap.CameraSensor ⋂ overlap.PIRSensor)
@@ -96,7 +97,68 @@ It is created according to the thumb rules of the assignment:
 
 All classes are disjoint except for the sub-classes of room, because some shelves share the same room or some sensor are in the same room and this will cause inconsistency.
 
-### OBJECT PROPERTIES
+#### OBJECT PROPERTIES
+
+*13 Object Properties* have been created:
+
+- **hasBook** relation between a shelf that has books in. (Domains = Shelf; Range = Book; Inverse of isBookof)
+
+- **hasCase** relation between a room or a shelf that has a case (Range = Case; Inverse of isCaseof). The absence of domain is due to the fact that we wants the union of Room class and Shelf one, but in protègè we can only have a intersection.
+
+- **hasDone** relation between a person that has done some activities in the shop (Domain = Person; Range = Activity)
+
+- **hasPhone** relation between a person that has a phone (Domain = Person; Range = Sensor; Inverse of isPhoneof)
+
+- **hasSensor** relation between a case or a room that has sensors inside/aside (Range = Sensor; Inverse of isSensorof). Also here the domain is not considered.
+
+- **hasShelf** relation between a room where are placed shelves (Domain = Shelf; Range = Room; Inverse of inRoom)
+
+- **inRoom** Inverse of hasShelf so range and domain are inverted
+
+- **isBookof** Inverse of hasBook so range and domain are inverted
+
+- **isCaseof** Inverse of hasCase so range and domain are inverted
+
+- **isConnected** relation between room connected with another room (Domain = Room; Range= Room). It is avoided the reflective property because cause unexpected inconsistency in the ontology.
+
+- **isPhoneof** Inverse of hasPhone so range and domain are inverted
+
+- **isSensorof** Inverse of hasSensor so range and domain are inverted
+
+- **overlap** relation between an Activity class and a sensor (Domain = Activity; Range = Sensor)
+
+Object properties are built in order to have a sense and to respect the thumb rules.
+
+#### DATA PROPERTIES
+
+*7 Data Properties* have been created:
+
+- **hasBookNumber** number of books on a shelf (Domain = Shelf; Range = xsd:integer)
+
+- **hasBoughtBook** number of books bought buy a person (Domain = Person; Range = xsd:integer)
+
+- **hasCode** barcode of 13 digits (random generated) on a book (Domain = RFIDAntennaSensor; Range = xsd:unsignedLong)
+
+- **hasColor** color of a shelf (Domain = Shelf; Range = xsd:string)
+
+- **hasDiscount** discount of 20% if a person buy more than 2 books, data property created only for the SWRL rule (maybe a day on the inauguration we can apply a real discount) (Domain = Person; Range = xsd:decimal)
+
+- **hasPage** number of pages of a book (Domain = Book; Range = xsd:int)
+
+- **hasShelfNumber** number of shelves in a room (Domain = Room; Range = xsd:int)
+
+Data properties are built in order to enhance the ontology and add more enclosure to the definitions of class.
+
+
+### ABOX
+
+#### SCENARIO
+
+Assertions are created according to a possible realistic scenario where 2 person Giulia and Marco entered the shop and only Marco makes some purcheses: he buys Naruto, One Piece and La Profezia dell'Armadillo. The AI-Read Outlet is located in Genova, the Entrance has a simple pirsensor and a StereoLabsZED as a stereo camera. All switches and cases are colored according to the shelves' color. The number of shelves in a room and their color can be seen in the Fig.1 of the *POSSIBLE STRUCTURE* paragraph.
+
+#### INDIVIDUAL ASSERTION
+
+In the Fig.4 it is illustrated a screen of some indivduals of the ontology.
 
 
  
