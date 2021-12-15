@@ -97,6 +97,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#hasShelf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#inRoom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#Room"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#Shelf"/>
     </owl:ObjectProperty>
     
 
@@ -105,6 +107,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#inRoom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#Shelf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#Room"/>
     </owl:ObjectProperty>
     
 
@@ -156,7 +160,10 @@
 
     <!-- http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#overlap -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#overlap"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#overlap">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mstai/ontologies/2021/11/AI-Read_Outlet_Ontology#Sensor"/>
+    </owl:ObjectProperty>
     
 
 
