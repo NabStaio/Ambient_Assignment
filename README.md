@@ -49,7 +49,7 @@ It is created according to the thumb rules of the assignment:
 #### CLASSES
 
 7 Top classes are created, with their respective sub-classes:
-**1.** **ACTIVITY** this class represents the activities that a person can done in the shop
+1. **ACTIVITY** this class represents the activities that a person can done in the shop
   1. subactivity
 
 
