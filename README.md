@@ -174,11 +174,20 @@ In the Fig.5 and Fig.6 it is illustrated a screen of some property assertions of
 
 <img src="propertyassertionbarcodeman3.PNG" width="500" height="200" /> _Fig.6 Property assertions of the individual BarCodeMan3_
 
-In the **AI-Read_Outlet_Ontology.Owl** file you can see all the individuals.
+In the **AI-Read_Outlet_Ontology.Owl** file you can see all the property assertions.
+
+### SWRL RULE
+
+To avoid an huge enhancement of the ontology it is implemented one SWRL rule in the ontology. Considering a realistic scenario, it is possible to has a discount of 20% on books, if a person can buy more than two. Then the rule is: *Person(?p) ^ hasBoughtBook(?p, ?nb) ^ swrlb:greaterThan(?nb, 2) -> hasDiscount(?p, 0.2)*
 
 
+## CONCLUSION AND IMPROVEMENTS
 
-
+This ontology is created in order to satisfy the requiremnts of an assignment.
+Nevertheless, for a future in which smart environments can be build in the real world, improvements can be done to enrich this ontology.
+For example the addition of a class *Author* in order to give another classification of book.
+Design the correct number of objects and rooms according to the seller's availability and preferences (e.g. more rooms, different colors, ...).
+I hope this can be a start point for a future in which love for reading never dies.
 
  
 
