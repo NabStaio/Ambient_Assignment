@@ -78,7 +78,7 @@ It is created according to the thumb rules of the assignment:
   
 - **Sensor** This class represents the sensors involved in the outlet, is a primitive class without specific definition, only sub-classes are defined
   - **CameraSensor** Camera sensor class that includes the stereo camera in the Entrance and phone here considered as a sensor (CameraSensor = Sensor ⋂ ∀isSensorof.Room)
-    - bb  
+    - **Phone** 
   
 
 
