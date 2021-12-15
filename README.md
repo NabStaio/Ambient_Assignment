@@ -31,10 +31,26 @@ Hovewer, to take a book a built-in case needs to be open, and it's done by switc
 Fig.2 and Fig.3 are a zoom of how shelves and books are designed.
 
 
-<img src="ShelfwithCaseandSwitch.jpeg" width="500" height="500" />      _Fig.2 A Shelf with case and a switch sensor_
+<img src="ShelfwithCaseandSwitch.jpeg" width="500" height="500" />_Fig.2 A Shelf with case and a switch sensor_
 
-<img src="BookwithRFID.jpeg" width="500" height="500" />                                                    _Fg.3 A Book with the barcode (RFID Antenna)_
+<img src="BookwithRFID.jpeg" width="500" height="500" />_Fg.3 A Book with the barcode (RFID Antenna)_
 
+## ONTOLOGY KNOWLEDGE REPRESENTATION
+
+The ontology of the AI-Read Outlet project is made with Protègè and Pellet reasoner.
+It is created according to the thumb rules of the assignment:
+- At list 3 top Classes are required in the TBox 
+- At list 4 Object Properties and 4 Data Properties should be created and used in the TBox
+- At list 6 Individual Assertions and 6 Property Assertions should be added in the ABox
+- Add at least one SWRL rule, to try how rules work.
+
+### TBOX
+
+#### CLASSES
+
+7 Top classes are created, with their respective sub-classes:
+**1.** **ACTIVITY** this class represents the activities that a person can done in the shop
+  1. subactivity
 
 
 
