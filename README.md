@@ -1,6 +1,11 @@
 
 # AMBIENT INTELLIGENCE ASSIGNMENT
 
+## REPOSITORY ORGANIZATION
+
+In the repository you can find the Ontology as *AI-Read_Outlet_Ontology.Owl* file, the *README.md* and all the images used in such readme file.
+To use the Ontology just open it with Protègè 5.5.0.
+
 ## THE IDEA
 
 The name of my project is **AI-Read Outlet**.
