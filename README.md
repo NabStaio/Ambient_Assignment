@@ -78,7 +78,14 @@ It is created according to the thumb rules of the assignment:
   
 - **Sensor** This class represents the sensors involved in the outlet, is a primitive class without specific definition, only sub-classes are defined
   - **CameraSensor** Camera sensor class that includes the stereo camera in the Entrance and phone here considered as a sensor (CameraSensor = Sensor ⋂ ∀isSensorof.Room)
-    - **Phone** 
+    - **Phone** is a sub-class of camera sensor that a person has (Phone = CameraSensor ⋂ ∀isPhoneof.Person)
+    - **StereoCameraSensor** sub-class of camera sensor staes in the Entrance (StereoCameraSensor = CameraSensor ⋂ ∀isSensorof.EntranceRoom)
+  - **PIRSensor** PIR sensor positioned on the entrance of the shoop to determine if someone is entered or not (PIRSensor = Sensor ⋂ ∀isSensorof.EntranceRoom)
+  - **RFIDAntennaSensor** RFID implemented in books, so every sensor of this type has a code associated (RFIDAntennaSensor = Sensor ⋂ ∀isSensorof.Book ⋂ ∃hasCode.unsignedLong)
+  - **SwitchSensor** Switch sensor near cases (SwitchSensor = Sensor ⋂ ∀isSensorof.Case)
+
+- **Shelf** This class represents the shelves that contains books and are in rooms. At every category of book is associated a colored shelf and this is how we can classify them. Every shelf has a case and also counts the number of books in. (Shelf = ∃hasBook.Book ⋂ ∃hasCase.Case ⋂ ∃inRoom.Room ⋂ ∃hasBookNumber.(>=1) ⋂ ∃hasColor.string)
+  -   
   
 
 
